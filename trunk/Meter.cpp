@@ -41,7 +41,7 @@ Meter::Meter(int theWidth, int theHeight, int colorRed, int colorGreen, int colo
     green = colorGreen;
     blue = colorBlue;
 
-    source = SDL_CreateRGBSurface(SDL_HWSURFACE, width, height, SCREEN_BPP, NULL, NULL, NULL, NULL);
+    source = SDL_CreateRGBSurface(SDL_HWSURFACE, width, height, SCREEN_BPP, 0, 0, 0, 0);
 }
 
 Meter::~Meter()
@@ -52,7 +52,7 @@ Meter::~Meter()
     }
 }
 
-void Meter::SetPercent(int newPercent)
+void Meter::SetPercent(double newPercent)
 {
     percent = newPercent;
 }
@@ -64,11 +64,11 @@ void Meter::ApplyToSurface(int x, int y, SDL_Surface* theSurface)
     {
         return;
     }
-    SDL_FillRect(source, NULL, SDL_MapRGB(source->format, red/2.0, green/2.0, blue/2.0));
+    SDL_FillRect(source, NULL, SDL_MapRGB(source->format, red/2, green/2, blue/2));
     SDL_Rect clip;
     clip.x = 0;
     clip.y = 0;
-    clip.w = (percent/100.0) * width;
+    clip.w = (Sint16)((percent/100.0) * width);
     clip.h = height;
     SDL_FillRect(source, &clip, SDL_MapRGB(source->format, red, green, blue));
 

@@ -74,7 +74,7 @@ bool Graphics::Init()
 {
     screen = SDL_SetVideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SDL_HWSURFACE | SDL_DOUBLEBUF/* | SDL_NOFRAME*/);
     if (screen == NULL) {return false;}
-    dynamicLayer = SDL_CreateRGBSurface(SDL_HWSURFACE, SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, NULL, NULL, NULL, NULL);
+    dynamicLayer = SDL_CreateRGBSurface(SDL_HWSURFACE, SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, 0, 0, 0, 0);
     if (dynamicLayer == NULL) {return false;}
     return true;
 }
@@ -87,6 +87,7 @@ void Graphics::SetPlayer(Character* thePlayer)
 void Graphics::SetMap(Map* theMap)
 {
     map = theMap;
+    dynamicLayer = SDL_CreateRGBSurface(SDL_HWSURFACE, (int)map->GetPixelDim().x, (int)map->GetPixelDim.y, SCREEN_BPP, 0, 0, 0, 0);
 }
 
 SDL_Surface* Graphics::GetScreen()
@@ -127,8 +128,8 @@ bool Graphics::Update()
 	if (player != NULL)
 	{
 		Point pos = player->GetPosition();
-		screenLocation.x = pos.x - (SCREEN_WIDTH - 48)/2;
-		screenLocation.y = pos.y - (SCREEN_HEIGHT - 64)/2;
+		screenLocation.x = (Sint16)(pos.x - (SCREEN_WIDTH - 48)/2.0);
+		screenLocation.y = (Sint16)(pos.y - (SCREEN_HEIGHT - 64)/2.0);
 	}
 	else
 	{
@@ -150,9 +151,9 @@ bool Graphics::Update()
 	}
 	if (target != NULL)
 	{
-        clip.x = target->GetPosition().x + 2;
+        clip.x = (Sint16)(target->GetPosition().x + 2);
         clip.w = CHARACTER_WIDTH - 4;
-        clip.y = target->GetPosition().y + 54;
+        clip.y = (Sint16)(target->GetPosition().y + 54);
         clip.h = 20;
         SDL_FillRect(dynamicLayer, &clip, SDL_MapRGB(dynamicLayer->format, 0, 255, 255));
 	}

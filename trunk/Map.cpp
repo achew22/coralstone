@@ -69,7 +69,7 @@ Map::Map(std::string mapFile, std::string pictureFile)
         //created in memory. If not, returns NULL
     if (spriteSheet == NULL)
     {
-        spriteSheet = new Sprite_Sheet(spriteDim.x, spriteDim.y, pictureFile);
+        spriteSheet = new Sprite_Sheet((int)spriteDim.x, (int)spriteDim.y, pictureFile);
     }
     else
     {
@@ -138,7 +138,7 @@ void Map::LoadFiles(std::string mapFile, std::string pictureFile)
         //created in memory. If not, returns NULL
     if (spriteSheet == NULL)
     {
-        spriteSheet = new Sprite_Sheet(spriteDim.x, spriteDim.y, pictureFile);
+        spriteSheet = new Sprite_Sheet((int)spriteDim.x, (int)spriteDim.y, pictureFile);
     }
     else
     {
@@ -162,13 +162,13 @@ void Map::ApplyMap(int x, int y, int w, int h, SDL_Surface* destination)
     {
         return;
     }
-    for (int i = start.x * spriteDim.x; i <= (start.x + numberTiles.x) * spriteDim.x; i += spriteDim.x)
+    for (double i = start.x * spriteDim.x; i <= (start.x + numberTiles.x) * spriteDim.x; i += spriteDim.x)
     {
-        for (int j = start.y * spriteDim.y; j <= (start.y + numberTiles.y) * spriteDim.y; j += spriteDim.y)
+        for (double j = start.y * spriteDim.y; j <= (start.y + numberTiles.y) * spriteDim.y; j += spriteDim.y)
         {
             if ((i >= 0) && (j >= 0))
             {
-                spriteSheet->ApplySprite(i, j, spriteIds[j/spriteDim.y][i/spriteDim.x], destination);
+                spriteSheet->ApplySprite((int)i, (int)j, spriteIds[int(j/spriteDim.y)][(int)(i/spriteDim.x)], destination);
             }
         }
     }
@@ -180,7 +180,12 @@ std::string Map::GetMapInfo()
 }
 
 //Returns the dimensions of the map, in terms of how many sprites tall by how many sprites wide
-Point Map::GetDim()
+Point Map::GetNumSpritesDim()
 {
     return Point(spriteIds.size(), spriteIds[0].size());
+}
+
+Point Map::GetPixelDim()
+{
+    return Point(spriteIds.size()*spriteDim.x, spriteIds[0].size()*spriteDim.y);
 }

@@ -291,7 +291,7 @@ void Client::HandleInput(SDL_Event SDLEvent)
             Character* closest = NULL;
             for (std::map<int, Character*>::iterator i = characterMap.begin(); i != characterMap.end(); i++)
             {
-                if ((closest == NULL) || ((abs(i->second->GetPosition().x - player->GetPosition().x) + abs(i->second->GetPosition().y - player->GetPosition().y) < abs(closest->GetPosition().x - player->GetPosition().x) + abs(closest->GetPosition().y - player->GetPosition().y))))
+                if ((closest == NULL) || ((abs((int)(i->second->GetPosition().x - player->GetPosition().x)) + abs((int)(i->second->GetPosition().y - player->GetPosition().y)) < abs((int)(closest->GetPosition().x - player->GetPosition().x)) + abs((int)(closest->GetPosition().y - player->GetPosition().y)))))
                 {
                     if (i->second != player && i->second != player->GetTarget())    //Don't let them target themselves this way, or their current target
                     {

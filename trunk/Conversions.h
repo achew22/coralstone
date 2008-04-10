@@ -26,6 +26,7 @@ along with Coralstone (Called LICENSE.txt).  If not, see
 namespace Conversions
 {
     std::string IntToString(int toConvert);
+    std::string IntToString(double toConvert);
     int StringToInt(std::string toConvert);
 };
 

@@ -57,7 +57,7 @@ Sprite_Sheet::Sprite_Sheet(int wOfSprite, int hOfSprite, std::string file, int r
     sprites.resize(numx*numy);
     for (int i = 0; i < numx*numy; i++)
     {
-        sprites[i] = SDL_CreateRGBSurface(SDL_HWSURFACE, wOfSprite, hOfSprite, SCREEN_BPP, NULL, NULL, NULL, NULL);
+        sprites[i] = SDL_CreateRGBSurface(SDL_HWSURFACE, wOfSprite, hOfSprite, SCREEN_BPP, 0, 0, 0, 0);
     }
     SDL_Rect clip;
     clip.w = wOfSprite;
