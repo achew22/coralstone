@@ -30,8 +30,8 @@ along with Coralstone (Called LICENSE.txt).  If not, see
 #include <SDL/SDL_thread.h>
 #include <SDL/SDL_net.h>
 
-SDLNet_SocketSet set;
-TCPsocket sock;
+//SDLNet_SocketSet set;
+//TCPsocket sock;
 
 bool Init();
 
@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
     client2.SetKeys(SDLK_w, SDLK_s, SDLK_a, SDLK_d, SDLK_q, SDLK_e);
 
     //This area reserved for testing experiments
-    //client1.ConnectRemote(1);
+    //
 
 	SDL_Event SDLEvent; //The main event for polling and what-not
     bool quit = false;

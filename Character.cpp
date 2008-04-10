@@ -286,22 +286,22 @@ void Character::UpdatePosition()
 	pos.x += vel.x * secsPassed;
 	pos.y += vel.y * secsPassed;
 
-	//Keep the position within the level, currently 4000 pixels by 400 pixels
+	//Keep the position within the level
 	if (pos.x < 0)
 	{
 		pos.x = 0;
 	}
-	else if (pos.x + dim.x > SCREEN_WIDTH)
+	else if (pos.x + dim.x > 1152)
 	{
-		pos.x = SCREEN_WIDTH - dim.x;
+		pos.x = 1152 - dim.x;
 	}
     if (pos.y < 0)
 	{
 	    pos.y = 0;
 	}
-	else if (pos.y + dim.y > SCREEN_HEIGHT)
+	else if (pos.y + dim.y > 960)
 	{
-	    pos.y = SCREEN_HEIGHT - dim.y;
+	    pos.y = 960 - dim.y;
 	}
 
 	lastTime = SDL_GetTicks();  //Update the last time
@@ -312,8 +312,8 @@ void Character::UpdateAnimation()
 {
     currentAnim->ApplyCurrentSprite((int)pos.x, (int)pos.y, destination);
 
-    healthMeter->ApplyToSurface((int)pos.x + 4, (int)pos.y - 8, destination);
-    magicMeter->ApplyToSurface((int)pos.x + 4, (int)pos.y - 4, destination);
+    healthMeter->ApplyToSurface((int)(pos.x + 4), (int)(pos.y - 8), destination);
+    magicMeter->ApplyToSurface((int)(pos.x + 4), (int)(pos.y - 4), destination);
 
 	lastTime = SDL_GetTicks();  //Update the lastTime function
 }
