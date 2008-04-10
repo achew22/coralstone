@@ -741,13 +741,13 @@ void Character::Attack(bool addEvent /* = true */)
         return;
     }
 
-    UseMagic(5, addEvent);
-    target->TakeDamage(10, addEvent);
-
     if (addEvent && (clientId != -1))
     {
         eventQueue.push(Event::Serialize("Attack", id, "NULL"));
     }
+
+    UseMagic(5, false);
+    target->TakeDamage(10, false);
 }
 
 void Character::Attack(std::string info)
