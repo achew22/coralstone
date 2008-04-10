@@ -168,7 +168,7 @@ void Map::ApplyMap(int x, int y, int w, int h, SDL_Surface* destination)
         {
             if ((i >= 0) && (j >= 0))
             {
-                spriteSheet->ApplySprite(i, j, spriteIds[i/spriteDim.x][j/spriteDim.y], destination);
+                spriteSheet->ApplySprite(i, j, spriteIds[j/spriteDim.y][i/spriteDim.x], destination);
             }
         }
     }
