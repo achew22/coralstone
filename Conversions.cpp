@@ -49,6 +49,11 @@ std::string Conversions::IntToString(int toConvert)
     return toReturn;
 }
 
+std::string Conversions::IntToString(double toConvert)
+{
+    return IntToString((int)toConvert);
+}
+
 int Conversions::StringToInt(std::string toConvert)
 {
     int toReturn = 0;

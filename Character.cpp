@@ -310,10 +310,10 @@ void Character::UpdatePosition()
 //Call only when the character is going to be drawn to the screen, that's all this does
 void Character::UpdateAnimation()
 {
-    currentAnim->ApplyCurrentSprite(pos.x, pos.y, destination);
+    currentAnim->ApplyCurrentSprite((int)pos.x, (int)pos.y, destination);
 
-    healthMeter->ApplyToSurface(pos.x + 4, pos.y - 8, destination);
-    magicMeter->ApplyToSurface(pos.x + 4, pos.y - 4, destination);
+    healthMeter->ApplyToSurface((int)pos.x + 4, (int)pos.y - 8, destination);
+    magicMeter->ApplyToSurface((int)pos.x + 4, (int)pos.y - 4, destination);
 
 	lastTime = SDL_GetTicks();  //Update the lastTime function
 }

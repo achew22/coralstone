@@ -40,7 +40,8 @@ public:
     void LoadFiles(std::string mapFile, std::string pictureFile);
     void ApplyMap(int x, int y, int h, int w, SDL_Surface* destination);
     std::string GetMapInfo();
-    Point GetDim(); //Returns the dimensions of the map, in terms of how many sprites tall by how many sprites wide
+    Point GetNumSpritesDim(); //Returns the dimensions of the map, in terms of how many sprites tall by how many sprites wide
+    Point GetPixelDim();    //Returns the dimensions of the map, in pixels
 };
 
 #endif

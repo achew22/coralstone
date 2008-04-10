@@ -26,7 +26,7 @@ along with Coralstone (Called LICENSE.txt).  If not, see
 class Meter
 {
 private:
-    int percent;    //This should be a number between 1 and 100
+    double percent;    //This should be a number between 1 and 100
     int width;
     int height;
     int red;
@@ -38,7 +38,7 @@ public:
     Meter();
     Meter(int theWidth, int theHeight, int colorRed, int colorGreen, int colorBlue);
     ~Meter();
-    void SetPercent(int newPercent);
+    void SetPercent(double newPercent);
     void ApplyToSurface(int x, int y, SDL_Surface* theSurface);
 };
 
