@@ -20,6 +20,7 @@ along with Coralstone (Called LICENSE.txt).  If not, see
 
 #include "Graphics.h"
 #include "constants.h"
+#include "Point.h"
 #include <string>
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
@@ -87,7 +88,12 @@ void Graphics::SetPlayer(Character* thePlayer)
 void Graphics::SetMap(Map* theMap)
 {
     map = theMap;
-    dynamicLayer = SDL_CreateRGBSurface(SDL_HWSURFACE, (int)map->GetPixelDim().x, (int)map->GetPixelDim.y, SCREEN_BPP, 0, 0, 0, 0);
+    if (dynamicLayer != NULL)
+    {
+        SDL_FreeSurface(dynamicLayer);
+    }
+    Point dimension = map->GetPixelDim();
+    dynamicLayer = SDL_CreateRGBSurface(SDL_HWSURFACE, (int)dimension.x, (int)dimension.y, SCREEN_BPP, 0, 0, 0, 0);
 }
 
 SDL_Surface* Graphics::GetScreen()

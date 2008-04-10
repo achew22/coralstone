@@ -160,15 +160,15 @@ void Map::ApplyMap(int x, int y, int w, int h, SDL_Surface* destination)
     numberTiles.y = (int)(h/spriteDim.y) + 1;
     if ((start.x + numberTiles.x >= spriteIds.size()) || (start.y + numberTiles.y >= spriteIds[0].size()))
     {
-        return;
+        //return;
     }
     for (double i = start.x * spriteDim.x; i <= (start.x + numberTiles.x) * spriteDim.x; i += spriteDim.x)
     {
         for (double j = start.y * spriteDim.y; j <= (start.y + numberTiles.y) * spriteDim.y; j += spriteDim.y)
         {
-            if ((i >= 0) && (j >= 0))
+            if ((i >= 0) && (j >= 0) && (i< spriteIds[0].size()*spriteDim.x) && (j < spriteIds.size()*spriteDim.y))
             {
-                spriteSheet->ApplySprite((int)i, (int)j, spriteIds[int(j/spriteDim.y)][(int)(i/spriteDim.x)], destination);
+                spriteSheet->ApplySprite((int)i, (int)j, spriteIds[(int)(j/spriteDim.y)][(int)(i/spriteDim.x)], destination);
             }
         }
     }
@@ -187,5 +187,5 @@ Point Map::GetNumSpritesDim()
 
 Point Map::GetPixelDim()
 {
-    return Point(spriteIds.size()*spriteDim.x, spriteIds[0].size()*spriteDim.y);
+    return Point(spriteIds[0].size()*spriteDim.x, spriteIds.size()*spriteDim.y);
 }
