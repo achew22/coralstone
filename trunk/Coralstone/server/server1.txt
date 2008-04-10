@@ -1,0 +1,3 @@
+worlds/world1.txt
+Pos.x: 20 Pos.y: 30 Dim.x: 48 Dim.y: 64 Vel.x: 0 Vel.y: 0 Id: 2 CurrentSectorId: 0 CurrentAreaId: 0 ClientId: -1
+Pos.x: 34 Pos.y: 56 Dim.x: 48 Dim.y: 64 Vel.x: 0 Vel.y: 0 Id: 1 CurrentSectorId: 0 CurrentAreaId: 0 ClientId: -1

@@ -1,0 +1,5 @@
+Title: Creating an MMORPG From the Ground Up
+Presenters: Andrew Allen and Brian Shourd
+
+Abstract:
+	This presentation will cover the process involved in creating a two-dimensional, cross-platform, sprite-based MMORPG (Massivly Multiplayer Online Role-Playing Game) using only C++ and the Simple Direct-Media Library (SDL). The creators of what is currently called AutoRPG will discuss the problems that arise throughout the stages of Game Development, as well as the solutions that they have discovered. Topics covered will include events, networking, databases, serialization, and other elements related to the game structure. Everyone with an interest in computer programming or MMORPGs is welcome to come.

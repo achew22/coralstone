@@ -1,0 +1,46 @@
+#summary How to build the program
+#labels Phase-Deploy
+
+= Help us out =
+
+If you know how to build AutoRPG for your operating system (it ought to work everywhere), please send us an email at autorpg@gmail.com so that we can post a tutorial here.
+
+= Dependencies =
+
+AutoRPG depends on [http://www.libsdl.org SDL] and [http://www.libsdl.org/projects/SDL_image/ SDL_image]. If you need help figuring out how to install these, check out [http://lazyfoo.net/SDL_tutorials/lesson01/index.php Lazy Foo]. He also has instructions on installing [http://lazyfoo.net/SDL_tutorials/lesson03/index.php libraries].
+
+
+= Compiling =
+
+A very basic makefile is provided, which assumes that you have SDL, SDL_image, and g++. If you don't have these, the makefile won't work.
+
+= Specific OS/Distribution =
+
+== Ubuntu/Kubuntu/Xubuntu ==
+
+First, make sure you have SDL, SDL_image, svn, and g++ installed
+{{{
+sudo aptitude install libsdl1.2-dev libsdl-image1.2-dev svn build-essential
+}}}
+Now get the source code from the repository
+{{{
+svn checkout http://autorpg.googlecode.com/svn/trunk/AutoRPG autorpg
+}}}
+Navigate to autorpg, then build the file
+{{{
+cd autorpg/
+make
+}}}
+If you get a bunch of error messages, please post them here and we'll try to help as best as we can. Currently, there is no install file (but we're working on it), so in order to run AutoRPG, enter the following in your terminal after you've navigated to autorpg folder
+{{{
+./autorpg
+}}}
+Hopefully soon we'll have a stable release with a debian package, and maybe even a package repository for you, but until that time, this is what you're stuck with.
+
+== Windows ==
+
+Coming soon
+
+== Mac ==
+
+Coming soon

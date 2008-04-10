@@ -1,0 +1,44 @@
+#summary A guide for those wishing to contribute content
+#labels Phase-Design
+
+= Introduction =
+
+Thanks for checking out what is still called AutoRPG, despite the fact that this is no longer a fitting name. If you're looking at this page, that means that you are considering donating some of your time and content to the project, and let me be the first to thank you for that contribution. Below you'll find information about how to add content, and also why to add it and what will happen when/if you do.
+
+
+= Why Help Out? =
+
+Well, firstly, because it's a genuinely nice thing to do. Currently, this project consists of only two people doing it part-time, and entirely for free. Neither of them is the least bit good at supplying artwork, writing histories, quests, or even dialogs. In other words, if this project is going to be any good, *someone* is going to have to provide this content, and we hope that you are qualified to do so. AutoRPG is licensed under the GPL, meaning that it is open source, and we hope that in the spirit of open source, you would like to commit a bit of your time.
+
+The other reason is a bit more practical. Anyone who commits a reasonable amount of content (the amount of which is not decided yet, and there may be different levels: Platinum, Gold, Silver) will get their name in the credits and on the website, if they so wish. For budding artists, especially those wishing to go into the Game industry, this might be a good resume builder. By "reasonable amount of content," we simply mean enough to warrant these perks. If you contribute a single quest in the game, that may not be enough (although we do appreciate it). There may also be in-game perks for such donations, but as the game is still largely up in the air, these perks have not yet been decided.
+
+
+= How Can I Help Out? =
+
+We need people in the following areas:
+  * Artwork
+    People in this department will be creating all of the artwork to be used in the game. This means characters, weapons, tiles for the background, everything.
+  * Writing
+    Writers will be responsible for writing histories, character backstories, quests, and dialog within the game.
+  * Level/World Creation
+    Level creators will likely be the position that is taken up first. Very shortly, we will be adding a special program which allows users to "Drag-n-Drop" tiles onto a blank map in order to create an entire area. As of yet, such a program is not likely to come out, since we do not have much artwork for it.
+
+
+= What Happens to the Stuff I Commit (ie Legal Stuff)? =
+
+Good question. Long story short - we don't know. Most likely, you will retain any rights that you have to such works, but then again, you will be giving us full access to use this work in any manner that we see fit: in-game, on the website, through distributed media, etc. If you decide that you no longer wish for us to use your artwork, too bad. Sorry, this is to protect the game from being heavily controlled by the content manufacturers. For instance, say that there is one person who has really helped us out, and donated 40 pages of history to the project. This history is now integrated backstory for the project, and though not impossible to remove, such a removal could prove to be difficult and detrimental to the quality of the project overall. If your content *can* be removed easily, and you wish for it to be taken out, we may be able to come to an agreement, but know that this is at the discretion of the project managers.
+
+
+= How do I Start? =
+
+Well, simply put, you could just start on your own. However, such a thing is not recommended, since we have certain guidelines that should be followed, and since we may need some things more than other things. For this reason, we ask that you first speak with the project's Content Manager (currently, just email autorpg@gmail.com with the subject "Content Creation") before you begin. Tell them what area you would like to help out in, and ask if there is any needed content in that area. You do not need to provide an example of your work, we understand that you don't need to have written for the New York Times in order to write a simple quest-arc, but if you would like to, that would be the place to do it. The Content Manager will get back to you as quickly as possible, and let you know what exactly they want you to do, as well as give you a timeline for doing it. You may direct any questions that you have to the Content Manager, and they will need to officially review your submission before it can be added to the game. After that, your content will be added in the next release, which will probably occur once per week.
+
+
+= I Already Made This Quest/Backstory/Sprite Sheet, Will You Take It? =
+
+That's great, we would love to take some of your already made content. However, we cannot guarantee that it will be accepted. It may need to be edited or tailored to meet our needs, and we may not need it at all. To find out, send your Quest/Backstory/Sprite Sheet to the Content Manager (autorpg@gmail.com) and ask.
+
+
+= I Have Some Other Question that Isn't Answered Here =
+
+Please, let us know, we would be happy to help out. Email autorpg@gmail.com and we'll get back to you as soon as we can.

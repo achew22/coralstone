@@ -1,0 +1,33 @@
+The following should exist on the Server
+	A World should contain:
+		-a std::map of pointers to all Characters in the World
+		-a collection of Areas
+			-how these Areas are linked
+	
+	An Area should contain:
+		-a std::map of pointers to all Characters in the Area
+		-a Map for that area
+		-collection of Sectors (Maybe not necessary, but might be helpful for collision detection and updating)
+			-how these Sectors are linked
+	
+	A Map should contain:
+		-a 2D std::vector of Tiles
+		-a method for applying the map at a given location
+	
+	A Tile should contain:
+		-pointer to the Sprite_Sheet containing the sprite(s) for the tile
+		-an Animation for the tile (which may be one or many sprites)
+		-information about events to pass when a tile is occupied (ie walkable, swimming, life-sapping, etc)
+	
+	A Sector should contain:
+		-a std::map of pointers to all Characters in the Sector
+		-pointers to all connecting Sectors
+			-information about how to pass between Sectors
+
+The following should exist as a copy on the Client
+	-the Sector containing the player, and the 8 Sectors surrounding it
+		-information must be passed between client and server about all of the Dynamic_Objects in these sectors
+			-Position should be periodically checked
+			-Events should be passed and timestamped
+				-timestamping allows for retroactive event passing, and minimizes lag-related error
+	-collision detection should occur only within the Sector(s) that the player is in (which should simplify collision detection)

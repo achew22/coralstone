@@ -1,0 +1,32 @@
+#summary What this project is/should be
+#labels Featured
+
+= Introduction =
+
+This game was originally thought up as an introduction to [http://www.libsdl.org SDL] in C++. Since then, the creators have kept working on it, and now it is developing into a two-dimensional MMORPG. Currently, we don't have any plans or hopes for when the initial release will be, as we don't like deadlines, and this is still a volunteer project. Speaking of volunteers, this game is still looking for artistic people who want to help out with writing, drawing, etc. More details can be found [HowToCreateContent here].
+
+The game will be released under the GPL or a similar license, as the creators feel strongly about open source programming. In the words of a non-programmer, that means that it is and will always be free to use, copy, edit, and redistribute for anyone who wishes. *No* fees to play, *No* fees to start, and *No* fees for some elite features of the game.
+
+
+= Story/Setting =
+
+Since we're already doing something a bit different, what with this being cross platform and two dimensional, we thought that we would stray a bit from the classic MMORPG theme. Be aware that since neither of the creators have any writing or other artistic skills, most of this world is still without names, and the details are a bit fuzzy. That is because we have not yet set on the specifics, we'll leave that to someone artistic who wants to [HowToCreateContent wants to volunteer]. If you have any ideas pertaining to this bit of the game, please email them to autorpg@gmail.com, so that we can get them set in stone. The sooner this is done, the better.
+
+The inhabitants of this world, which might be a futuristic Earth or could just be a made-up land, have the uncanny ability to alter their DNA (via magic or machine, whatever). Thus some of them are what could be considered "mutants" with mutant powers. The mutants are currently split up into two main factions: one who wishes to enslave all of the "normals" (those without mutant powers), and one who wishes to protect the rights of the normals. The normals, who for whatever reason are unable to (or don't want to) alter their DNA, are afraid of all mutants, regardless of faction. They hate and fear the mutants, because they are inherently stronger than the normals.
+
+Players may choose to play as a character from either of the mutant factions, and all of the normals will be controlled by AI. This allows for a lot of conflict, not just between player factions, but also involving the AI. For example, there might be an event in which it is the job of a person (or group) from faction 1 to protect a group of normals from a raiding party of faction 2. The fight is made interesting by the fact that this group of normals is heavily armed, and is recklessly attacking both factions out of fear and confusion.
+
+
+= Gameplay =
+
+In order to avoid the traditional format of race->class->ability defining a character (ie tank, healer, cc) we have devised a new system for character creation. Firstly, there may or may not be "races", that is more up to the content writers than anything. It doesn't affect gameplay, but may add a bit of character specialization that players would like a lot. Secondly, instead of having a player's class define their abilities, we would like to have a player's abilities define their class. This is done in the following way:
+
+There are five different areas of specialization: Physical, Fire, Ice, Psychic, and Electric. From these fields, users specify their character by choosing abilities. The fields each have a sort of hierarchy, so that the entry-level abilities are fairly basic, and fairly weak, but as a character progresses through a field, his/her abilities become more and more specialized and powerful. On top of that, abilities from the traditional MMORPG "classes" will be spread out throughout all of the areas of specialization. In other words, one person may specialize in Psychic, and may collect such abilities as Psychic Barrier (put up a barrier around your target which absorbs 1000 damage) and Empath (remove one harmful effect from target player) in order to assume the stereotypical "healer" role. However, another person may specialize in Psychic and gain such abilities as Temporal Radiation (the enemy moves and attacks at one-quarter speed for 10 seconds) and Crippling Wave (the enemy is unable to attack for 2 seconds), to take on the "DPS" role. Abilities for the many roles that we see in usual MMORPGs will be intermingled between the fields, allowing for extremely specialized characters.
+
+In this way, players trade off versatility for power as they specialize their character. A character which has invested enough in the Ice field will have the most powerful Ice moves in the game. The cost of this is that they only have a few points left to invest in other fields. When they are facing a molten lava monster, they will be at a severe disadvantage when compared to a player who invested in, say, the Electrical field.
+
+This is another area that we need help in - designing the various attacks and abilities that will go along with each field. If you have some ideas, any at all, please email them to the Content Manager at autorpg@gmail.com. More can be learned about adding content to the game [HowToCreateContent here].
+
+= Conclusion =
+
+As you can see, this design document is far from done, but hopefully it provides a little bit of insight into what this game intends to become, and the direction and theme that we want for it.
