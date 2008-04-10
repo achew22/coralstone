@@ -1,0 +1,10 @@
+
+5 fields
+       -Physical
+       -Electrical
+       -Fire(ical)
+       -Ice(ical)
+       -Psychic
+
+From these fields, users specify their character. The tree works similar to the World of Warcraft talent tree, except that all classes stem from specific talents in the tree. In other words, one person may specialize in Psychic, and may collect such abilities as Psychic Barrier (put up a barrier around your target which absorbs 1000 damage) and Empath (remove one harmful effect from target player) in order to assume the stereotypical "healer" role. However, another person may specialize in Psychic and gain such abilities as Temporal Flare (the enemy moves and attacks at one-quarter speed for 10 seconds) and Crippling Wave (the enemy is unable to attack for 2 seconds), to take on the "DPS" role. Abilities for the many roles that we see in usual MMORPGs will be intermingled between the fields, allowing for extremely specialized characters.
+It seems obvious that the best abilities in each field will lie at the final rungs of the tree, forcing the player to become specialized in that area in order to gain said ability. To balance this, each tree has a certain weakness against the others. In other words, someone highly specialized in Fire would probably beat, hands down, someone highly specialized in Ice, since Fire beats Ice. However, somewhere in the Electrical tree is an ability called Surge Protector, which decreases the chance of any single attack doing too much damage to the player. In this way, someone highly specialized in Ice may want to have this ability as well. In any case, balancing the trees will probably take a lot of time and play testing.

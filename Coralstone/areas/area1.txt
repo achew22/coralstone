@@ -1,0 +1,6 @@
+Name:
+The only area so far
+Id:
+0
+Map:
+maps/map1.txt maps/map1.gif

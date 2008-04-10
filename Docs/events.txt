@@ -1,0 +1,33 @@
+Events
+	Events that must be sent Server->Client:
+		From Nearby Chars:
+			Attack(who is attacking, who are they attacking, how (what attack))
+			Defend(who is defending, who are they defending against, how)
+			TakeDamage(who, how much)
+			Death(where)
+			Spawn(where)
+			Movement(direction, where)	//Originally, we were not planning on implementing the "where" in this event, but I now think that as long as we only pass coordinates during movement and attacks, we're good to go
+			Chat(what)
+
+		Other events?
+
+	Events that must be sent Client->Server:
+		From Player:
+			Attack(who is targeted, how (what attack))
+			Defend(who is attacking, how)
+			TakeDamage(how much)
+			Movement(direction, where)
+			Death(where)
+			Spawn(where)
+			Chat(what)
+			SectorChange(where, from sector_id, to sector_id)
+			AreaChange(where, from area_id, to area_id)
+			QuestCompletion(quest_id)
+			InventoryChanged(which slot, added/removed, item_id)
+			LevelChange(when, whatlevel)
+			StatsChange(whatstat)
+			LogIn(when, where)
+			LogOut(when, where)
+			
+	Events that must be registered within the Client:
+		All of Above

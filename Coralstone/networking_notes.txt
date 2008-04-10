@@ -1,0 +1,47 @@
+Initializing information
+	Level information	
+		-Level is generated randomly, pass the seed for initialization
+
+Loop of constant data interaction
+	List of all objects
+		3 chunks
+			-Noninteracting
+			-Intractable
+			-Characters
+			
+To implement
+	Get and set functions for all objects
+		-Characters
+		-Dinamic_objects
+
+	Data serializer
+		-Get variables from everything
+		-Convert to a standard format
+	Data parser
+		-Parses standard format
+		-Set variables in everything
+		
+Server - manages physics and interaction movements, state changes, and AI
+	-Generates level
+	-Manages object movement
+	-Sends changes to users
+Client - User input, sending, and displaying
+	-Handles character input and interaction with objects
+
+	Client version 2 take less information from the server, in generate more on your own returns to server
+	Server checks the data sends boolean back. Reduces load to 
+	
+Two protocols UDP & TCP/IP
+	UDP
+		Advantages
+			-Very fast
+			-Quick code
+		Disadvantages
+			-Packet wrapping
+			-Failed packets are dropped without knowledge
+	TCP/IP
+		Advantages
+			-Wrappers written for you
+			-Almost never used for games
+		Disadvantages
+			-Big overhead
